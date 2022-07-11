@@ -1,0 +1,103 @@
+Assignment:1
+- Create a  new class as "MyMobile"
+- create variables for the class
+- Create 2 public methods (makeCall() , sendMsg()) with simple print statement
+- Create a private method payBills() with simple print statement
+- Create main method
+- Create object for "MyMobile" class and call the methods and variables using the object
+- Execute the class and get the result in console
+Assignment:2
+Goal: To understand the object, method and return type.
+
+a) Create a class by name: Chrome (with no main method) in same package
+b) Create a method by name: getName()
+c) Print a statement inside the method --> "This is google chrome"
+d) Call the method getName() from class: Browser using object reference
+e) Run Browser class and Confirm the printed in console
+Assignment: 3
+Goal:To understand  ( Class and Methods)
+
+       Create a class "Calculator" with below methods
+	(a) add(int num1, int num2, int num3), it should return sum of num1+num2+num3
+	(b) sub(int num1, int num2), it should return subtraction of of num1-num2
+	(c) mul(double num1, double num2), it should return product of num1 * num2
+	(d) divide(float num1, float num2), it should return division of num1 / num2
+
+-- Create another class as MyCalculator and call all the methods from Calculator and print the results
+
+Assignment4 : Print if the given number is odd or even
+
+Goal: To understand the mod operator(%), conditional statement and logic writing
+
+a) Create a class by name: OddOrEven
+b) Create a main method using shortcut
+c) Declare a class variable of type of int with a value as input
+d) Write a logic to print if the given input is odd or even
+
+Hint: Divide the given input by 2 and if the remainder is 0 -> even else odd. 
+Use mod (%) operator to find remainder
+
+Assignment 5:
+Goal: To find whether a number is a Prime number or not
+	 * input: 13
+	 * output: 13 is a Prime Number
+// Declare an int Input and assign a value 13
+
+// Declare a boolean variable flag as false
+
+// Iterate from 2 to half of the input
+
+// Divide the input with each for loop variable and check the remainder
+
+// Set the flag as true when there is no remainder
+
+// break the iterator
+
+// Check the flag (Provide a condition)
+
+// Print 'Prime' when the condition matches
+
+// Print 'Not a Prime' when the condition doesn't match 
+
+Assignment 6:
+Goal: CheckIfTheNumberIsPositiveOrNegative 
+
+	
+	Problem statement: Check if the number is positive or negative
+        / *Pseudocode
+	 * : ---------- 
+	 * 1. Initialize a number, say, int number= 35; 
+	 * 
+	 * 2. If a number is positive, print "The number is positive" 
+	 * 
+	 * If a number is negative, print "The number is negative" 
+	 * 
+	 * If it nether negative nor positive, print as
+	 * 
+	 * "The number is neither positive nor negative"
+	 */
+Assignment 7:
+Goal: Convert A Negative Number To PositiveNumber 
+
+	/*
+	*Problem statement: Convert a negative number to positive number
+	 * Pseudocode: 
+	 * 
+	 * 1. Initialize an integer with a negative number like,
+	 * int number = -40;
+	 * 2. Check if the number is a negative number 
+	 * Hint : any number that is lesser than zero is a negative number 
+	 * 3. If so, convert the number to a positive number
+	 * 4. Print the converted positive number
+Assignment 8:
+Goal: Find the odd numbers in the specific range of numbers
+	 * 
+	 * Input: range of numbers (starting to end) [1 to 20]
+	 * Output: Printing only odd numbers [1,3,5,7,9...,19]
+          System.out.println("Printing only the odd numbers from 1 to 20");
+
+		//	Iterate from 1 to 20 (tip: using loop concept)
+
+		//	Within loop -> check whether the integer is odd (tip: use mod operator % )
+
+		//	Within loop -> print the odd integer
