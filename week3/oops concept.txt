@@ -1,0 +1,130 @@
+Java
+-----
+Today's Agenda
+---------------
+Arrays
+String
+Java-OOPs
+Inheritance
+Polymorphism
+
+
+Arrays
+--------
+int num=10,20,30,89;
+when you like to store similar data types together
+Ex: student id,score...
+take specific size[10]  [5]
+Arrays work based on index
+index start with 0, a[0],a[1],a[2]...a[n]
+You cannot Increment or decrement!! fixed
+syntax
+--------
+int[] nums={1,4,3,5,6};
+
+print first data
+a[0]=1;
+array[index]
+int[] studeDetail=new int[10];
+String[] companyName=new String[5];//0 1 2 3 4
+Length--->To find the number of data in an Array
+Index of last data-->length-1
+syntax
+------------
+Arrays.Sort(arrayname)---->To arrange the data in an array
+
+Array is fixed we can not change the size at run time
+
+String:
+-------------
+String--" "
+String  str="Testleaf";//Literal
+String s=new String("Testleaf")//object
+CaseSensitive A a
+Based on Ascii table
+== string compare the memory location
+String immutable --we can not change
+equal--->used to compare the string value
+		
+Java OOPs
+----------
+Inheritance
+Polymorphism
+
+Inheritance
+-----------
+parent to child
+keyword
+extends
+code reuseability
+Types
+------
+
+Single inheritance
+class B extends  class A
+class A
+  |
+class B
+
+
+Multilevel inheritance
+
+Class A
+  |
+Class B
+  |
+class C
+
+
+
+
+Multiple inheritance---->Not support java
+Class A   class B
+   m1     | m2
+   m3       m3????
+    class C?????
+To over come we can use interface
+class c extends class B,class A
+
+
+
+syntax
+------
+child class extends parents
+
+
+
+
+Class Room:
+1.create a class Vehicle
+public Method(soundHorn,applyBreak)
+
+2.Create Car Class extends Vehicle
+                        car
+        |                             |
+
+class name BMW  extends Car                 Class name Audi extends Car 
+
+
+Polymorphism
+--------------
+poly-many
+morphism---form
+The ability of an object to take many form
+
+Types
+-------
+1.OverLoading
+---Static/method overloading
+method helps us to have two or more methods in class with same name but it will be different by arg type arg
+compile Time\Early binding
+same method with different arugument
+
+2.Overriding
+
+Dynamic polymorphism/RunTime/Late binding
+
+
+Same method name with same argument in different class
+green or white triangle
+
