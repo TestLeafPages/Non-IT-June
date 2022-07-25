@@ -1,0 +1,111 @@
+Abstraction
+----------------
+---Hiding something.
+---Showing essential information to the user.
+?can achieve
+Abstract class 
+unimplemented method
+implemented method
+we can not create object
+Interface
+place of Abstraction where we place the abstract method(100%)
+unimplemented method
+no constructor allowed ,no we can not object
+Design pattern
+Collection:
+------------
+Arrays
+------
+---Store set of data
+---fixed in size
+---drawback
+--------------
+int[]={1,2,3,4};
+int[] obj=new int[5];
+waste of memory???
+Collection
+----------
+----Interface
+---Dynamic size(resize-increment or decrement)
+----collection of book---library
+Collections---Class
+----------------------------------
+Collection
+ |      |
+List   Set
+List
+------
+---Interface
+----dynamic in size
+....>worked based on Insertion order
+....>it will allow duplicate
+----we need some implementation class
+1.ArrayList
+based on index 0....n
+a[0]=yes search the element
+a[1]=35;
+a[2]=23;
+2.LinkedList
+node based
+s1 s2 s3 s4 s5 s6 s7
+List 
+-----
+syntax
+-------
+List<Wrapper class>listName=new ArrayList<Wrapper class>();
+List<Integer>list=new ArrayList<Integer>();
+Wrapper class
+--------------
+int--------Integer
+float------Float
+double-----Double
+long------Long
+boolean------Boolean
+String------String
+char--------Character
+Methods
+--------
+add----listname.add()----add the data or value in list
+remove---listename.remove---remove data from list
+contains-----index we check the value return boolean(T/F)
+get(index)----to get particular data in list
+clear---to clear entire list
+isEmpty---my list empty boolean
+Collections.sort----Arrange the list
+print the  entire list-----listname
+size of my list size()
+
+
+
+
+Set
+----
+---Interface
+---can not allow duplicate(unique)
+---single dimension[]
+           Implementation class
+|                      |               |
+
+HashSet         LinkedHashSet        TreeSet
+
+1.HashSet---Based on Hashing algorithm----Give fast response---Random order
+
+2. LinkedHashSet----Based on Insertion order
+
+3.TreeSet----based on ASCII Algorithm----Give Ascending order....
+
+syntax
+-------
+Set<Wrapper Class> setname=new ImplementationClass<wrapper class>();
+
+Methods
+-------
+To add the data in set---setname.add();
+To remove the data----setname.remove();
+size of my set-----size();
+check the data there---contains(index);
+to clear the set  clear();
+To check empty set---isEmpty();
+Set is not support get() becoz of implementation class
+For each loop
+For(datatype variable :input)
