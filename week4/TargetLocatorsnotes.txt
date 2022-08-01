@@ -1,0 +1,93 @@
+Today's Agenda
+---------------
+Target Locators
+----------------
+1.Alert
+2.Frames
+3.windows
+4.How to take snapshort
+Thread.sleep();
+
+1.Alert
+warning,pop up,notification
+ Dialog box--alert me t click ok,cancel,delete
+pop up model dialog which gives some information
+ Two Type
+----------
+Model dialog
+--------
+Cannot inspect the alert
+1.Simple Alert
+has text meassage with one option like ok
+handle----Accept,getText
+
+2.confirmation Alert
+has atext message and two option ok,cancel
+handle----Accept,dismiss,getText
+
+3.Prompt Alert
+has text message and input box,two option ok cancel
+handle-Accept,Dismiss,getText,sendKeys
+
+Non Model  dialog
+---------------
+Sweet Alert
+We can handle
+inspect and you can do the action
+it present inside the dom
+Limitaioin
+-----------
+-you can not take snapshot of alert
+
+Exception
+--------
+UnhandledAlertException------if you are not interact with Dom element without closing the  alert
+
+NoAlertPresentException------when tried to swich the alert without actually the alert.
+
+2.Frames
+-----------
+Is a section of a web page
+ads in page
+inside the dom frame by/tag name of frame/iframe
+html inside html
+dom inside another dom
+Enter inside????
+parent frame
+inner frame child
+outer frame
+default
+overLoading
+-frame(int index)----start from 0 1-5 0 1 2 3 4
+-frame(String nameOr Id)----name,id locator 
+-frame(WebElement ele)
+
+Exception:
+-NoSuchFrame----handle the frame wrongly
+
+driver.switchTo().Frame()
+//come out to all frames
+driver.switchTo().defaultContent
+
+3.handle the Window 
+------------------
+Window /tab technically same
+window/tab---url/title
+Challenges:
+window url,title,squence number---can change
+---so?how to find the window unique????
+Selenium
+--------
+every new open window-->num alphanumeric char-string
+getWindowHandle
+CDwindow-709F027C4C42E691D6B66214D5B955B6
+CDwindow-8E865BF2F9877933029EEC10CF7C6597
+Exception:
+NoSuchWindowException
+
+How to switch to a new window?
+1.getWindowHandles
+2.convert set into list
+3.pick the particular window using get(index)
+4.Switch to the window using handle
+5.close or quit
