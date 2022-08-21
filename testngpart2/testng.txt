@@ -1,0 +1,88 @@
+Today's Agenda
+---------------
+Parameterization
+<parameter>
+Data provider- read the data from excel
+
+Integrated excel with TestNg
+
+Parameterization:
+-No hard coding of data inside the java class
+-Preferred to automate them by passing from external source(excel,xml,json,db)
+
+Types-2
+Static-(parameter)
+-if it is common across multiple testcase--->xml
+example:url,username,password,browser
+
+Dynamic (DataProvider)
+-it is specific to the test case.
+Example:
+companyname, firstname,lastname,phone num 2. Edit lead-company name and phone number
+
+Steps to implements parameter
+--------------------------------
+1.Identify the data we need to be static in the xml(url,username,password)
+
+2.Add the parameter tag for each of the data in the xml file
+
+3.Map the parameters in the java class using @Parameters
+-Note: Give sequence,name should be exactly match with the xml
+4.use the parameters inside the method using arguments
+5.Replace the arguments with hardcoded value
+6.you should run the code in xml file when you are using paramerters
+ 
+
+@Before suit
+  @Before Test
+    @Before class
+      @Before method
+          @Test
+Stepsto implement DataProvider:
+
+@DataProvider
+1.Identify the data that are need to be dynamic for a particular testcase
+   -CreateLead: Companyname,firstname,lastname,phonenumber
+   - Edit lead:phonenumber,company name
+2.Create a method to pass the data with @DataProvider annotation
+
+3.Create Input array with number of column (number of data/fields) and number of row
+  -Index start from 0
+4.Mention the set of data
+5.Return data back to the executed class or calling class
+6.Receive the datain the testcase
+  -use dataProvider attribute
+  -use the argument inside the method
+
+
+How ? to read the data from excel:
+-Microsoft Excel(MicroSoft)
+-Not a direct java library!No
+-Apache POI(access the Ms Office software)using java
+-Focus to Data from Excel!
+-Excel extensions:.xls,.xlsx,.xlsm
+
+workBook(Create.xlsx)
+   -worksheet(sheet1)
+     -Rows
+      -Column(cell)
+XSSFWorkBook(only for .xlsx)
+   XSSFWorkSeet
+       XSSFRow
+             XSSFC
+ApachiPOI 5.2.2
+
+Step to read from excel
+1.Create the java class ReadExcel
+2.open the workbook using the file name and path
+3.open the sheet(sheet name,sheet index)
+4.Go to specific row(by index)[0]
+5.Go to specific column(by index) cell[1]
+6.Read the content
+
+Integrated Apache PoI with TestNg
+-----------------------------------
+1.Convert the method with return type as String[][]
+2.Make sure to push all the excel data to the array
+3.Comment or delete hard code dataprovider and replace with excel data
+4.Run Create, edit and willconfirm its working fine
